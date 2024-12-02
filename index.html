@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----Linking google fonts for icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" /> 
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"/>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo"> Jhea<span>nnie</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <div id="menu-icon" onclick="toggleMenu()"&#9776;></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm<span>Jean</span></h1>
+            <div class="typewriter">I'm a <span class="typewriter-text"></span>
+            </div>
+            
+           <p>Hello! My name is Jean P. Armeldez, and I am a passionate Frontend Developer with 3 years of experience 
+                in creating visually stunning, responsive, and user-friendly web interfaces. 
+                I specialize in transforming ideas and designs into functional, interactive web applications.</p>
+                <div class="btn">
+                    
+                    
+                    <a href="#discover" class="btn">Discover</a>
+                </div>
+        </div>
+        <div class="home-img">
+            <img src="img/image.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/armildez.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About<span>Me</span></h2>
+            <p>"I'm a Frontend Developer who loves crafting visually stunning and user-friendly websites!"
+                With over 3 years of experience in web development, <br>I specialize in creating responsive 
+                and interactive web applications using modern technologies like <span>Html, Javascript, and CSS</span>"<br><br>
+            
+                When I'm not working, you can find me cooking and playing online games. I believe in 
+                "Focus on what you can control and accept what you cannot." and I'm always eager to learn, grow, 
+                and connect with like-minded individuals.<br><br>
+
+                Feel free to reach out if you'd like to collaborate, share ideas, or just have a chat! 😊
+                </p>
+
+                <div class="contact-info">
+                    <h3>Contact me</h3>
+                    <p>📞 0950-274-3028</p>
+                    <p>📷 @itsmeindayyy</p>
+                    
+                  </div>
+                </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <h2>My Skills</h2>
+        </div>
+    
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Python</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <span class="big">90%</span>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <span class="big">85%</span>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <span class="big">70%</span>
+                            <small>Problem-Solving</small>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <span class="big">90%</span>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+            <a href="#projects" class="v-sign-btn1">
+                <span class="text1">Move to projects</span>
+                <span class="v-sign">&#x25BE;</span>
+            </a>
+    </section>
+    <section id="projects" class="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Tetris Games</p>
+                <img src="img/Tetris.PNG" alt="Project 1 image" class="project-image">
+                <button onclick="viewDetails('Project 1', 'Tetris is a classic tile-matching puzzle video game originally designed and programmed by Alexey Pajitnov in the Soviet Union in 1984. It involves manipulating falling shapes known as Tetriminos, which are composed of four-square blocks arranged in various configurations. The objective is to create horizontal lines with these Tetriminos without any gaps. When a line is completed, it disappears, and any blocks above it fall down to fill the space, potentially creating  new opportunities for completing lines. The game ends when the stack of Tetriminos reaches the  top of the game board, preventing new Tetriminos from entering.')">View Details</button>
+
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Login Page</p>
+                <img src="img/Login (1).png" alt="Project 1 image" class="project-image">
+                <button onclick="viewDetails('Project 2', 'a user interface that allows individuals to access a secure system, application, or website by authenticating their identity. It typically includes fields for entering credentials, such as a username, email, or phone number, and a password. ')">View Details</button>
+
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Portfolio Webpage</p>
+                <img src="img/SelfPort.JPG" alt="Project 1 image" class="project-image">
+                <button onclick="viewDetails('Project 3', 'It includes a professional introduction, a photograph, contact details, and a brief self-introduction about being a second-year Information Technology student. The page also outlines the educational background in a table format, listing schools attended, courses completed, and periods of attendance. The design uses a clean, golden theme with a professional and structured layout.')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+         <div class="container" id="contact">
+        <div class="left">
+            <div class="content">
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+                <h2>Hello!</h2>
+                <form id="contactForm">
+                    <textarea placeholder="Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <footer>
+                    <p>&copy; 2024 Jean P. Armeldez. All Rights Reserved.</p>
+                </footer>
+            
+            </div>
+        </div>
+        <div class="right">
+            <h2>Get In Touch</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/jean.armeldez.9">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/qtiee_inday">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@creama0">
+                    <i class="bx bxl-tiktok"></i>
+                </a>
+            </div>
+            <p>Or use your email for registration:</p>
+            <div class="form-container">
+            <form id="signUpForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  
+   
+   
